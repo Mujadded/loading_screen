@@ -1,8 +1,6 @@
 # LoadingScreen
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/loading_screen`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem allow to load a simple loading screen on any page that you want. This works in a similar way of simple_form
 
 ## Installation
 
