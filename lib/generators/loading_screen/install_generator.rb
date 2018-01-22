@@ -1,11 +1,11 @@
-module SimpleTooltip
+module LoadingScreen
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
       source_root File.expand_path('../templates', __FILE__)
-  
-      desc "This generator installs all the files necessary for the simple_tooltip gem"
 
-      
+      desc "This generator installs all the files necessary for the loading_screen gem"
+
+
       def copy_stylesheet_and_images
         path = "public/stylesheets/loading_screen.css"
         copy_file "./#{path}", path
@@ -17,7 +17,7 @@ module SimpleTooltip
         path = "public/javascripts/loading_screen.js"
         copy_file "./#{path}", path
       end
-  
+
       def copy_app_files
         path = "app/helpers/loading_screen.rb"
         copy_file "./#{path}", path
@@ -42,15 +42,13 @@ module SimpleTooltip
         puts '  <%= javascript_include_tag :defaults %>'
         puts "  <%= javascript_include_tag 'loading_screen.js' %>"
         puts ''
-        puts '5: Create some tooltip entries in /tooltips and then add links'
-        puts '   to them in views of your other models'
-        puts "   <%= loading_screen('css') %>"
+        puts '5: Add "<%= loading_screen(\'css\') %>"'
         puts ''
         puts 'For more information see the project page on GitHub'
         puts '   https://github.com/mujadded/loading_screen'
         puts '---------------------------------------------------------------'
       end
-      
+
     end
   end
 end
