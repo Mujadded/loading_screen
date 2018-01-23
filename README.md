@@ -20,8 +20,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this line in application.js
+```
+//= require loading_screen
+```
 
+Add this line in application.css
+```
+ *= require loading_screen
+```
+
+All done ! Now to use in any view add
+```
+<%= loading_screen %>
+```
+And you are done :)
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
