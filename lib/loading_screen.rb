@@ -1,5 +1,4 @@
-require "loading_screen/version"
+require "loading_screen/engine"
 
 module LoadingScreen
-  # Your code goes here...
 end
