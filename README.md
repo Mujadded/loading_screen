@@ -10,7 +10,6 @@ for the latest development branch
 ```ruby
 gem 'loading_screen', git: https://github.com/Mujadded/loading_screen.git
 ```
-or 
 
 for the stable branch
 ```ruby
