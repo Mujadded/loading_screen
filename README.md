@@ -18,7 +18,7 @@ gem install loading_screen
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 ## Usage
 
