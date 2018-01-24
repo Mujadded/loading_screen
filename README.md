@@ -1,29 +1,36 @@
 # LoadingScreen
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/loading_screen`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem allow to load a simple loading screen on any page that you want. This works in a similar way of simple_form
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'loading_screen'
+gem 'loading_screen', git: https://github.com/Mujadded/loading_screen.git
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install loading_screen
-
 ## Usage
 
-TODO: Write usage instructions here
+Add this line in application.js
+```
+//= require loading_screen
+```
 
+Add this line in application.css
+```
+ *= require loading_screen
+```
+
+All done ! Now to use in any view add
+```
+<%= loading_screen %>
+```
+And you are done :)
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
