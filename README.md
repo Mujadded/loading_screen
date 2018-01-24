@@ -32,11 +32,17 @@ Add this line in application.css
  *= require loading_screen
 ```
 
-All done ! Now to use in any view add
+All now to use it in any view just add in any .erb file inside view
 ```
 <%= loading_screen %>
 ```
-And you are done :)
+
+Or if you want to add custom gif as the loading screen just download a gif and put it inside the assets/images/
+```
+<%= loading_screen gif: 'your gif file name witout ".gif" ' %>
+```
+And you are done. Enjoy !
+## Development
 
 Currently only fullscreen loading animation is supported. `Div` based loading animation feature will be added soon.
 

@@ -1,4 +1,4 @@
-.spinner{
+.loading_screen-spinner{
     position: fixed;
     left: 0px;
     top: 0px;
@@ -7,13 +7,13 @@
     z-index: 9999;
     background: rgb(249,249,249);
 }
-.spinner > div:first-child{
+.loading_screen-spinner > div:first-child{
     position: absolute;
     top:40%;
     left:45%;
 }
 
-#spinner-css {
+#loading_screen-spinner-css {
     width: 80px;
     height: 80px;
     background-color: orange;
