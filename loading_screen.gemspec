@@ -9,19 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mujadded Al Rabbani Alif"]
   spec.email         = ["Mujadded.alif@gmail.com"]
 
-  spec.summary       = " Description "
-  spec.description   = " Description "
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Loading screen for time-consuming background task"
+  spec.description   = "It loads up a animation until the full page a loaded in the browser"
+  spec.homepage      = "https://github.com/Mujadded/loading_screen"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
