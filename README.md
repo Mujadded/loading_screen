@@ -38,6 +38,8 @@ All done ! Now to use in any view add
 ```
 And you are done :)
 
+Currently only fullscreen loading animation is supported. `Div` based loading animation feature will be added soon.
+
 ## Contributing
 
 Bug reports and pull requests are welcome. So fork the repo and create a pull :) .
