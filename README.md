@@ -1,18 +1,24 @@
 # LoadingScreen
 
-This gem allow to load a simple loading screen on any page that you want. This works in a similar way of simple_form
+This gem allow to load a simple loading screen on any page that you want.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
+for the latest development branch
 ```ruby
 gem 'loading_screen', git: https://github.com/Mujadded/loading_screen.git
 ```
 
+for the stable branch
+```ruby
+gem 'loading_screen'
+```
+
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 ## Usage
 
@@ -30,6 +36,7 @@ All now to use it in any view just add in any .erb file inside view
 ```
 <%= loading_screen %>
 ```
+
 Or if you want to add custom gif as the loading screen just download a gif and put it inside the assets/images/
 ```
 <%= loading_screen gif: 'your gif file name witout ".gif" ' %>
@@ -37,18 +44,12 @@ Or if you want to add custom gif as the loading screen just download a gif and p
 And you are done. Enjoy !
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Currently only fullscreen loading animation is supported. `Div` based loading animation feature will be added soon.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/loading_screen. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome. So fork the repo and create a pull :) .
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the LoadingScreen project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/loading_screen/blob/master/CODE_OF_CONDUCT.md).
