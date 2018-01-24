@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mujadded Al Rabbani Alif"]
   spec.email         = ["Mujadded.alif@gmail.com"]
 
-  spec.summary       = " Description "
-  spec.description   = " Description "
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = " Loading Screen in one line! "
+  spec.description   = " Loading Screen using a simple tag, no css hassle "
+  spec.homepage      = "https://github.com/Mujadded/loading_screen"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
