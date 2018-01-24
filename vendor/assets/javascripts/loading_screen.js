@@ -1,16 +1,16 @@
 $( window ).bind('load',function() {
 
     // hide spinner
-    $(".spinner").fadeOut();
+    $(".loading_screen-spinner").fadeOut();
 
     // show spinner on AJAX start
     $(document).ajaxStart(function(){
-        $(".spinner").show();
+        $(".loading_screen-spinner").show();
     });
 
     // hide spinner on AJAX stop
     $(document).ajaxStop(function(){
-        $(".spinner").fadeOut();
+        $(".loading_screen-spinner").fadeOut();
     });
 
 });
