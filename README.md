@@ -6,13 +6,15 @@ This gem allow to load a simple loading screen on any page that you want.
 
 Add this line to your application's Gemfile:
 
+for the latest development branch
 ```ruby
 gem 'loading_screen', git: https://github.com/Mujadded/loading_screen.git
-for the latest development branch
+```
 or 
 
-gem install loading_screen
 for the stable branch
+```ruby
+gem install loading_screen
 ```
 
 And then execute:
