@@ -1,4 +1,5 @@
 # LoadingScreen
+[![Gem Version](https://badge.fury.io/rb/loading_screen.svg)](https://badge.fury.io/rb/loading_screen)
 
 This gem allow to load a simple loading screen on any page that you want.
 
