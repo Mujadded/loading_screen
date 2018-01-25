@@ -4,7 +4,11 @@
 This gem allow to load a simple loading screen on any page that you want.
 
 ## Installation
-
+Loading_Screen depends on jQuery.
+If you're using Rails 5.1+, add the `jquery-rails` gem to your Gemfile:
+```ruby
+gem 'jquery-rails'
+```
 Add this line to your application's Gemfile:
 
 for the latest development branch
@@ -25,10 +29,12 @@ And then execute:
 
 Add this line in application.js
 ```
+//= require jquery
+
 //= require loading_screen
 ```
 
-Add this line in application.css
+and add this line in application.css
 ```
  *= require loading_screen
 ```
