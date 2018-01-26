@@ -35,13 +35,22 @@ After that add this line in application.css
 ```
  *= require loading_screen
 ```
-
-We are all set, now to use it in any view file ( for e.g.: index.html.erb) just add:
+### Using available CSS animations
+We are all set, to use it with default `rotating_square` animation in any view file ( for e.g.: index.html.erb) just add:
 ```
 <%= loading_screen %>
 ```
 
-Or if you want to add custom gif as the loading screen just download a gif and put it inside the assets/images/
+There are also other loading animation available for you to choose from, like:
+
+```
+<%= loading_screen style: :double_bounce %> 
+```
+Other animations will be available shortly...
+
+### Using custom gif images
+
+if you want to add custom gif as the loading screen just download a gif and put it inside the `assets/images/` and add: 
 ```
 <%= loading_screen gif: 'your gif file name witout ".gif" ' %>
 ```

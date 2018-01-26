@@ -11,5 +11,13 @@ Nodeunit contributors (sorted alphabetically)
   * Documentation building
   * Code reviewer
   
+* **[Swakhar Dey](https://github.com/Swakhar)**
+
+  * Css design
+  * Animations designing with css
+  * Code reviewer
+  
+  
+  
 **[Full contributors list](https://github.com/mujadded/loading_screen/contributors).**
 
