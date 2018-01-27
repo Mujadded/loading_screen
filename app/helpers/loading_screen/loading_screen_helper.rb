@@ -14,7 +14,7 @@ module LoadingScreen::LoadingScreenHelper
               array << content_tag(:div, '', id: 'loading_screen-double_bounce1')
               array << content_tag(:div, '', id: 'loading_screen-double_bounce2')
             end.join.html_safe
-          elsif options[:default]
+          else
             content_tag :div, '', id: 'loading_screen-rotating-square'
           end
         end
