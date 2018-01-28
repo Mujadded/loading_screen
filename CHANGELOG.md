@@ -1,4 +1,11 @@
 ## Releases
+
+## 0.2.0
+
+### Animation adding
+  * New animation added
+  * exception added
+  
 ## 0.1.2
 
 ### Basic Initializations
