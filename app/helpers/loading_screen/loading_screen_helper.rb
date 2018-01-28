@@ -12,6 +12,8 @@ module LoadingScreen::LoadingScreenHelper
     end
   end
 
+  private
+
   def gif_handler(options)
     content_tag :div, '', class: 'loading_screen-gif' do
       image_tag(options[:gif])
