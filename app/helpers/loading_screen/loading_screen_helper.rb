@@ -10,16 +10,14 @@ module LoadingScreen::LoadingScreenHelper
         css_handler options
       end
     end
-  rescue NameError => e
-    error_handler
   end
 
   def gif_handler(options)
     content_tag :div, '', class: 'loading_screen-gif' do
       image_tag(options[:gif])
     end
-  rescue AssetNotFound => e
-    raise Exception.NameError
+  rescue Sprockets::Rails::Helper::AssetNotFound => e
+    raise LoadingScreen::InvalidOptionError.new "'#{options[:gif]}' file does not exist"
   end
 
   def css_handler(options)
@@ -29,7 +27,7 @@ module LoadingScreen::LoadingScreenHelper
       elsif options[:style] == :default
         load_rotate_square
       else
-        raise Exception.NameError
+        raise LoadingScreen::InvalidOptionError.new "Wrong style name: '#{options[:style]}'"
       end
     end
   end
@@ -43,11 +41,5 @@ module LoadingScreen::LoadingScreenHelper
 
   def load_rotate_square
     content_tag :div, '', id: 'loading_screen-rotating-square'
-  end
-
-  def error_handler
-    content_tag :div, '', class: 'loading_screen-spinner' do
-      content_tag :div, 'Something went wrong!', class: 'loading_screen-error'
-    end
   end
 end
