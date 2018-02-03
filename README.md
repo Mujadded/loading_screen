@@ -41,7 +41,7 @@ We are all set, to use it with default `rotating_square` animation in any view f
 <%= loading_screen %>
 ```
 
-There are also other loading animation available for you to choose from, like:
+There are also other loading animation available for you to choose from just add `style` option, like:
 
 ```
 <%= loading_screen style: :double_bounce %>
@@ -53,20 +53,23 @@ There are also other loading animation available for you to choose from, like:
 
 Other animations will be available shortly...
 
-You can change the color of the animation and also the background of the loader just add:
-
-```
-<%= loading_screen style: :double_bounce, color: 'red', background: 'green' %>
-```
-Color format like `hash`, `rgb`, `rgba`, etc css color format are acceptable
-
 ### Using custom gif images
 
-if you want to add custom gif as the loading screen just download a gif and put it inside the `assets/images/` and add:
+if you want to add custom gif as the loading screen just download a gif and put it inside the `assets/images/` and add `gif` option:
 ```
 <%= loading_screen gif: 'your gif file name witout ".gif" ' %>
 ```
 And you are done. Enjoy !
+
+### Using custom colors
+
+You can change the color of the css animation and also the background of the loader just add `color` option:
+
+```
+<%= loading_screen color: 'red', background: 'green' %>
+```
+Color format like `hash`, `rgb`, `rgba`, etc  all css color format are acceptable
+
 ## Development
 
 Currently only fullscreen loading animation is supported. `Div` based loading animation feature will be added soon.
