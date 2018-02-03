@@ -4,12 +4,11 @@ require "loading_screen/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "loading_screen"
-  spec.version       = LoadingScreen::VERSION
   spec.authors       = ["Mujadded Al Rabbani Alif", "Yearsin Ar Rahman", "Swakhar Dey"]
   spec.email         = ["Mujadded.alif@gmail.com"]
 
   spec.summary       = "Loading screen for time-consuming background task"
-  spec.description   = "It loads up a animation until the full page is loaded in the browser. Not only default css animation but you can also add custom gif to show in the loading screen"
+  spec.description   = "It loads up a animation until the full page is loaded in the browser. It can load provided css animation and you can also add custom gif to show in the loading screen"
   spec.homepage      = "https://github.com/Mujadded/loading_screen"
   spec.license       = "MIT"
 

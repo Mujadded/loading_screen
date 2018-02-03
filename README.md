@@ -44,13 +44,25 @@ We are all set, to use it with default `rotating_square` animation in any view f
 There are also other loading animation available for you to choose from, like:
 
 ```
-<%= loading_screen style: :double_bounce %> 
+<%= loading_screen style: :double_bounce %>
 ```
+
+```
+<%= loading_screen style: :rectangle_bounce %>
+```
+
 Other animations will be available shortly...
+
+You can change the color of the animation and also the background of the loader just add:
+
+```
+<%= loading_screen style: :double_bounce, color: 'red', background: 'green' %>
+```
+Color format like `hash`, `rgb`, `rgba`, etc css color format are acceptable
 
 ### Using custom gif images
 
-if you want to add custom gif as the loading screen just download a gif and put it inside the `assets/images/` and add: 
+if you want to add custom gif as the loading screen just download a gif and put it inside the `assets/images/` and add:
 ```
 <%= loading_screen gif: 'your gif file name witout ".gif" ' %>
 ```

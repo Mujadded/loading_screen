@@ -1,5 +1,6 @@
 @import url("loading_screen-default.css");
-@import url("loading_screen-double_bounce.css");
+@import url("loading_screen-double-bounce.css");
+@import url("loading_screen-rectangle-bounce.css");
 
 .loading_screen-spinner {
     position: fixed;
