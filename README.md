@@ -59,7 +59,7 @@ if you want to add custom gif as the loading screen just download a gif and put 
 ```
 <%= loading_screen gif: 'your gif file name witout ".gif" ' %>
 ```
-And you are done. Enjoy !
+And you are done. Enjoy
 
 ### Using custom colors
 
