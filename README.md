@@ -81,3 +81,7 @@ Bug reports and pull requests are welcome. So fork the repo and create a pull :)
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Reference
+
+The css loading desing currently in use is taken form [spinkit](http://tobiasahlin.com/spinkit/) made by tobiasahlin. We all thank him for his awesome desing !
