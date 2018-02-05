@@ -4,6 +4,7 @@ require "loading_screen/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "loading_screen"
+  spec.version       = LoadingScreen::VERSION
   spec.authors       = ["Mujadded Al Rabbani Alif", "Yearsin Ar Rahman", "Swakhar Dey"]
   spec.email         = ["Mujadded.alif@gmail.com"]
 

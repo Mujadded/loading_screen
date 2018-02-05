@@ -51,6 +51,10 @@ There are also other loading animation available for you to choose from just add
 <%= loading_screen style: :rectangle_bounce %>
 ```
 
+```
+<%= loading_screen style: :wandering_cubes %>
+```
+
 Other animations will be available shortly...
 
 ### Using custom gif images
@@ -63,7 +67,7 @@ And you are done. Enjoy
 
 ### Using custom colors
 
-You can change the color of the css animation and also the background of the loader just add `color` option:
+You can change the background color and the loader color ( color for only css animation loader, gif's color depends on the image ) by adding `background` option and `color` option:
 
 ```
 <%= loading_screen color: 'red', background: 'green' %>
@@ -81,7 +85,3 @@ Bug reports and pull requests are welcome. So fork the repo and create a pull :)
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Reference
-
-The css loading desing currently in use is taken form [spinkit](http://tobiasahlin.com/spinkit/) made by tobiasahlin. We all thank him for his awesome desing !

@@ -1,6 +1,7 @@
 @import url("loading_screen-default.css");
 @import url("loading_screen-double-bounce.css");
 @import url("loading_screen-rectangle-bounce.css");
+@import url("loading_screen-wandering-cubes.css");
 
 .loading_screen-spinner {
     position: fixed;
@@ -20,6 +21,16 @@
 }
 
 .loading_screen-css {
-    height:90px;
-    width: 90px;
+    height:100px;
+    width: 100px;
+}
+
+.loading_screen-css > div {
+  background-color: orange;
+  height: 90%;
+  width: 6px;
+  display: inline-block;
+  margin-left: 2px;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }

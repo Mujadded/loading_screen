@@ -2,7 +2,6 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: orange;
     opacity: 0.6;
     position: fixed;
     -webkit-animation: sk-bounce 2.0s infinite ease-in-out;

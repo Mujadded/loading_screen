@@ -23,38 +23,28 @@ module LoadingScreen::LoadingScreenHelper
   end
 
   def css_handler(options)
-    options[:color] = "background-color: " + options[:color] if options[:color]
     content_tag :div, '', class: 'loading_screen-css' do
       if options[:style] == :double_bounce
-        load_double_bounce options[:color]
+        multiple_div_content 2, 'loading_screen-double-bounce', options[:color]
       elsif options[:style] == :rectangle_bounce
-        load_rectangle_bounce options[:color]
+        multiple_div_content 5, 'loading_screen-rect', options[:color]
+      elsif options[:style] == :wandering_cubes
+        multiple_div_content 2, 'loading_screen-cube', options[:color]
       elsif options[:style] == :default
-        load_rotate_square options[:color]
+        style = options[:color] ? "background-color: " + options[:color] : nil
+        content_tag :div, '', id: 'loading_screen-rotating-square' , style: style
       else
         raise LoadingScreen::InvalidOptionError.new "Wrong style name: '#{options[:style]}'"
       end
     end
   end
 
-  def load_double_bounce(color)
+  def multiple_div_content(number_of_div, id_name, color)
+    style = color ? "background-color: " + color : nil
     [].tap do |array|
-      array << content_tag(:div, '', id: 'loading_screen-double-bounce1', style: color )
-      array << content_tag(:div, '', id: 'loading_screen-double-bounce2' , style: color )
-    end.join.html_safe
-  end
-
-  def load_rotate_square(color)
-    content_tag :div, '', id: 'loading_screen-rotating-square' , style: color
-  end
-
-  def load_rectangle_bounce(color)
-    [].tap do |array|
-      array << content_tag(:div, '', id: 'loading_screen-rect1', style: color)
-      array << content_tag(:div, '', id: 'loading_screen-rect2', style: color)
-      array << content_tag(:div, '', id: 'loading_screen-rect3', style: color)
-      array << content_tag(:div, '', id: 'loading_screen-rect4', style: color)
-      array << content_tag(:div, '', id: 'loading_screen-rect5', style: color)
+      number_of_div.times do |i|
+        array << content_tag(:div, '', id: "#{id_name}#{i+1}", style: style)
+      end
     end.join.html_safe
   end
 end
