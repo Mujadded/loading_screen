@@ -1,5 +1,7 @@
+
 #loading_screen-cube1, #loading_screen-cube2 {
   position: absolute;
+  background-color: orange;
   width: 20px;
   height: 20px;
   top: 0;

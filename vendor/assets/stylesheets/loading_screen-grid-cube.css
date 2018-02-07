@@ -1,0 +1,59 @@
+.loading_screen-grid-cube {
+    width: 80px;
+    height: 80px;
+}
+.loading_screen-grid-cube > div {
+    width: 33%;
+    height: 33%;
+    background-color: orange;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+#loading_screen-grid-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+#loading_screen-grid-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+#loading_screen-grid-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s; }
+#loading_screen-grid-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+#loading_screen-grid-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+#loading_screen-grid-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+#loading_screen-grid-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s; }
+#loading_screen-grid-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+#loading_screen-grid-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+          -webkit-transform: scale3D(0, 0, 1);
+          transform: scale3D(0, 0, 1);
+      }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+          -webkit-transform: scale3D(0, 0, 1);
+          transform: scale3D(0, 0, 1);
+      }
+}

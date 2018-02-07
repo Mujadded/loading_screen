@@ -40,6 +40,10 @@ We are all set, to use it with default `rotating_square` animation in any view f
 ```
 <%= loading_screen %>
 ```
+or 
+```
+<%= loading_screen style: :default %>
+```
 
 There are also other loading animation available for you to choose from just add `style` option, like:
 
@@ -53,6 +57,10 @@ There are also other loading animation available for you to choose from just add
 
 ```
 <%= loading_screen style: :wandering_cubes %>
+```
+
+```
+<%= loading_screen style: :cube_grid %>
 ```
 
 Other animations will be available shortly...

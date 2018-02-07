@@ -2,6 +2,7 @@
 @import url("loading_screen-double-bounce.css");
 @import url("loading_screen-rectangle-bounce.css");
 @import url("loading_screen-wandering-cubes.css");
+@import url("loading_screen-grid-cube.css");
 
 .loading_screen-spinner {
     position: fixed;
@@ -18,19 +19,4 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-}
-
-.loading_screen-css {
-    height:100px;
-    width: 100px;
-}
-
-.loading_screen-css > div {
-  background-color: orange;
-  height: 90%;
-  width: 6px;
-  display: inline-block;
-  margin-left: 2px;
-  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-  animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }
