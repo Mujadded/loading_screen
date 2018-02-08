@@ -14,7 +14,7 @@ gem 'loading_screen', git: https://github.com/Mujadded/loading_screen.git
 
 for the stable branch
 ```ruby
-gem 'loading_screen'
+gem 'loading_screen', '~> 0.2.3'
 ```
 
 And then execute:
