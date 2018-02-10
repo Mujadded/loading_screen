@@ -88,7 +88,7 @@ Currently only fullscreen loading animation is supported. `Div` based loading an
 
 ## Contributing
 
-Bug reports and pull requests are welcome. So fork the repo and create a pull :) .
+Bug reports and pull requests are welcome. So fork the repo and create a pull :).
 
 ## License
 
