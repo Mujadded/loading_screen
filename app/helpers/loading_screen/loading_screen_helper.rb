@@ -42,6 +42,10 @@ module LoadingScreen::LoadingScreenHelper
       content_tag :div, '', class: 'loading_screen-grid-cube' do
         multiple_div_content 9, 'loading_screen-grid-cube'
       end
+    when :dotted_spinner
+      content_tag :div, '', class: 'loading_screen-dot' do
+        multiple_div_content 2, 'loading_screen-dot'
+      end
     when :default
       content_tag :div, '', id: 'loading_screen-rotating-square', style: @color
     else

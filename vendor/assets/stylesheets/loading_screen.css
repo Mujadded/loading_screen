@@ -3,6 +3,7 @@
 @import url("loading_screen-rectangle-bounce.css");
 @import url("loading_screen-wandering-cubes.css");
 @import url("loading_screen-grid-cube.css");
+@import url("loading_screen-dot-spinner.css");
 
 .loading_screen-spinner {
     position: fixed;
