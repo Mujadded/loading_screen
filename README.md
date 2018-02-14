@@ -63,6 +63,10 @@ There are also other loading animation available for you to choose from just add
 <%= loading_screen style: :cube_grid %>
 ```
 
+```
+<%= loading_screen style: :dotted_spinner %>
+```
+
 Other animations will be available shortly...
 
 ### Using custom gif images
