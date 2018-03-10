@@ -46,6 +46,10 @@ module LoadingScreen::LoadingScreenHelper
       content_tag :div, '', class: 'loading_screen-dot' do
         multiple_div_content 2, 'loading_screen-dot'
       end
+    when :dotted_line
+      content_tag :div, '', class: 'loading_screen-dot-line' do
+        multiple_div_content 3, 'loading_screen-dot-line'
+      end
     when :default
       content_tag :div, '', id: 'loading_screen-rotating-square', style: @color
     else

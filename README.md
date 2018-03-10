@@ -40,7 +40,7 @@ We are all set, to use it with default `rotating_square` animation in any view f
 ```
 <%= loading_screen %>
 ```
-or 
+or
 ```
 <%= loading_screen style: :default %>
 ```
@@ -67,6 +67,9 @@ There are also other loading animation available for you to choose from just add
 <%= loading_screen style: :dotted_spinner %>
 ```
 
+```
+<%= loading_screen style: :dotted_line %>
+```
 Other animations will be available shortly...
 
 ### Using custom gif images
